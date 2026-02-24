@@ -1,28 +1,177 @@
-<!-- RIGHT: CONTACT -->
-<aside class="card" aria-label="Contact and links">
-  <h2>Contact Support</h2>
-  <p>
-    Email us and include as many details as possible so we can help quickly.
-  </p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SnapSpence Support</title>
+  <meta name="description" content="SnapSpence Support — Help, FAQs, and contact." />
+  <style>
+    :root{
+      --bg:#0b1214;
+      --text:#e9f2f2;
+      --muted:#b7c6c6;
+      --accent:#00DF82;
+      --line:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(1200px 800px at 20% 0%, rgba(0,223,130,.18), transparent 55%),
+                  radial-gradient(900px 600px at 100% 30%, rgba(3,98,76,.22), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 48px}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:12px 0 22px; border-bottom:1px solid var(--line);
+      flex-wrap:wrap;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700}
+    .logo{
+      width:36px; height:36px; border-radius:10px;
+      background: linear-gradient(135deg, rgba(0,223,130,.95), rgba(3,98,76,.9));
+      box-shadow: 0 10px 30px rgba(0,223,130,.15);
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px; border:1px solid var(--line); border-radius:999px;
+      color:var(--muted); font-size:14px;
+      background: rgba(255,255,255,.03);
+    }
+    h1{font-size:34px; margin:22px 0 6px}
+    p.lead{color:var(--muted); margin:0 0 18px; max-width:70ch}
+    .grid{display:grid; gap:14px; grid-template-columns:1fr; margin-top:16px}
+    @media (min-width: 860px){ .grid{grid-template-columns: 1.15fr .85fr} }
+    .card{
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.18);
+    }
+    .card h2{margin:0 0 10px; font-size:18px}
+    .card p{margin:8px 0; color:var(--muted)}
+    .list{margin:10px 0 0; padding:0; list-style:none}
+    .list li{padding:10px 0; border-top:1px solid var(--line); color:var(--muted)}
+    .list li:first-child{border-top:none; padding-top:0}
+    .btnrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 12px; border-radius:12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color:var(--text);
+      font-weight:600;
+    }
+    .btn.primary{
+      background: rgba(0,223,130,.12);
+      border-color: rgba(0,223,130,.35);
+    }
+    details{border-top:1px solid var(--line); padding-top:10px; margin-top:10px}
+    details:first-of-type{border-top:none; padding-top:0; margin-top:0}
+    summary{cursor:pointer; font-weight:700; color:var(--text); list-style:none}
+    summary::-webkit-details-marker{display:none}
+    .small{font-size:13px; color:var(--muted)}
+    .footer{
+      margin-top:20px; padding-top:18px; border-top:1px solid var(--line);
+      display:flex; flex-direction:column; gap:8px; color:var(--muted); font-size:13px;
+    }
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;}
+    .kbd{
+      display:inline-block; padding:2px 8px; border-radius:8px;
+      border:1px solid var(--line); background: rgba(255,255,255,.03);
+      color: var(--text); font-size: 12px;
+    }
+  </style>
+</head>
 
-  <ul class="list">
-    <li><strong>Email:</strong> <a href="mailto:support@snapspence.com">support@snapspence.com</a></li>
-    <li><strong>Subject suggestion:</strong> <span class="mono">SnapSpence Support – [Issue]</span></li>
-    <li><strong>Include:</strong> iPhone model, iOS version, app version, screenshots, and steps to reproduce.</li>
-  </ul>
-
-  <div class="btnrow">
-    <a class="btn primary" href="mailto:support@snapspence.com?subject=SnapSpence%20Support%20-%20Help%20Request">
-      Email Support
-    </a>
-    <!-- Optional: link to your app store page -->
-    <a class="btn" href="#" aria-label="Open SnapSpence on the App Store">App Store Page</a>
-  </div>
-
-  <div class="footer">
-    <div class="small">
-      <strong>Billing note:</strong> Purchases and subscriptions are processed by Apple via the App Store.
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div>SnapSpence</div>
+          <div class="small">Support Center</div>
+        </div>
+      </div>
+      <div class="pill">
+        Need help fast? Email us: <a href="mailto:support@harayonitservices.com">support@harayonitservices.com</a>
+      </div>
     </div>
-    <div class="small">© <span id="year"></span> SnapSpence. All rights reserved.</div>
+
+    <h1>How can we help?</h1>
+    <p class="lead">
+      Find answers to common questions about SnapSpence, subscriptions, and troubleshooting.
+      If you can’t find what you need, contact us and we’ll get back to you.
+    </p>
+
+    <div class="grid">
+      <section class="card" aria-label="Frequently Asked Questions">
+        <h2>FAQs</h2>
+
+        <details>
+          <summary>I can’t restore my subscription / premium features.</summary>
+          <p>
+            In the app, go to <span class="kbd">Settings</span> → <span class="kbd">Restore Purchases</span>.
+            Make sure you’re signed in to the same Apple ID used to purchase.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I cancel my subscription?</summary>
+          <p>
+            Subscriptions are managed by Apple. On your iPhone:
+            <span class="kbd">Settings</span> → <span class="kbd">Apple ID</span> → <span class="kbd">Subscriptions</span> →
+            select <span class="mono">SnapSpence</span> → <span class="kbd">Cancel</span>.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do refunds work?</summary>
+          <p>Apple handles billing and refunds for App Store purchases.</p>
+        </details>
+
+        <details>
+          <summary>My expenses didn’t sync / data is missing.</summary>
+          <p>Try force-closing the app and reopening it. If it persists, email us with details.</p>
+        </details>
+      </section>
+
+      <aside class="card" aria-label="Contact and links">
+        <h2>Contact Support</h2>
+        <p>Email us and include as many details as possible so we can help quickly.</p>
+
+        <ul class="list">
+          <li><strong>Email:</strong> <a href="mailto:support@snapspence.com">support@harayonitservices.com</a></li>
+          <li><strong>Subject suggestion:</strong> <span class="mono">SnapSpence Support – [Issue]</span></li>
+          <li><strong>Include:</strong> iPhone model, iOS version, app version, screenshots, and steps to reproduce.</li>
+        </ul>
+
+        <div class="btnrow">
+          <a class="btn primary" href="mailto:support@harayonitservices.com?subject=SnapSpence%20Support%20-%20Help%20Request">
+            Email Support
+          </a>
+          <a class="btn" href="#" aria-label="Open SnapSpence on the App Store">App Store Page</a>
+        </div>
+
+        <div class="footer">
+          <div class="small">
+            <strong>Billing note:</strong> Purchases and subscriptions are processed by Apple via the App Store.
+          </div>
+          <div class="small">© <span id="year"></span> SnapSpence. All rights reserved.</div>
+        </div>
+      </aside>
+    </div>
   </div>
-</aside>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
